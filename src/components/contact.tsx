@@ -49,7 +49,7 @@ export default function Contact() {
     <section className="bg-gray-100 text-gray-800 py-16 px-6 md:px-12">
 
       <div className="max-w-7xl w-full">
-        <div className="text-center mb-12 relative">
+        <div className="text-center mb-6 relative">
           <h2 className="text-4xl font-bold text-gray-900 inline-block">
             Get in Touch
             <div className="h-1 w-16 bg-indigo-600 mx-auto mt-2"></div>

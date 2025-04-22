@@ -28,6 +28,8 @@ export default function Hero(){
                 <Image
                     src="/business5.png"
                     alt="Digital Solutions"
+                    width={500}
+                    height={500}
                     className="w-full max-w-xl rounded-xl shadow-lg"
                 />
                 </div>

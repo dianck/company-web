@@ -52,8 +52,11 @@ export default function TeamsPage() {
                 <Image
                   src={member.picture.large}
                   alt={`${member.name.first} ${member.name.last}`}
-                  className="w-28 h-28 rounded-full mx-auto mb-4 border"
+                  width={112}
+                  height={112}
+                  className="rounded-full mx-auto mb-4 border object-cover"
                 />
+                
                 <h3 className="text-xl font-semibold text-gray-800">
                   {member.name.first} {member.name.last}
                 </h3>

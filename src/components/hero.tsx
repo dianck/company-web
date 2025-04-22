@@ -21,7 +21,7 @@ export default function Hero(){
                 <p className="text-lg">
                     Kami adalah mitra teknologi Anda dalam membangun solusi digital yang inovatif, scalable, dan tepat guna.
                 </p>
-                <div className="w-[280px] justify-center bg-white text-blue-900 px-6 py-3 font-semibold rounded-md hover:bg-gray-200 transition">
+                <div className="w-[250px] justify-center bg-white text-blue-900 px-6 py-3 font-semibold rounded-md hover:bg-gray-200 transition">
                     <Link href="/#contact">Hubungi Kami Sekarang</Link>
                 </div>
                 </div>

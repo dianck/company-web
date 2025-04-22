@@ -45,7 +45,8 @@ export default function Contact() {
 
   return (
     // <section className="bg-gray-100 py-20 px-6 md:px-16">
-    <section className="w-[120%] mx-[calc(-10%)] bg-gray-100 md:mx-auto md:w-full md:max-w-7xl flex flex-col md:flex-row items-center justify-center p-6 gap-[10px]">
+    // <section className="w-[120%] mx-[calc(-10%)] bg-gray-100 md:mx-auto md:w-full md:max-w-7xl flex flex-col md:flex-row items-center justify-center p-6 gap-[10px]">
+    <section className="bg-gray-100 text-gray-800 py-16 px-6 md:px-12">
 
       <div className="max-w-7xl w-full">
         <div className="text-center mb-12 relative">

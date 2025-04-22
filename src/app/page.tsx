@@ -4,6 +4,13 @@ import Overview from '@/components/overview';
 import Services from '@/components/services';
 import Testimonials from '@/components/testimonial';
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Home",
+    description: "Home Page",
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">

@@ -1,4 +1,5 @@
 // pages/index.js
+import Contact from '@/components/contact';
 import Hero from '@/components/hero';
 import Overview from '@/components/overview';
 import Services from '@/components/services';
@@ -30,6 +31,10 @@ export default function Home() {
 
       <Testimonials />
 
+      <section id="contact">
+        <Contact />
+      </section>
+      
       {/* Footer */}
       <footer className="bg-gray-800 text-white text-center py-4 mt-20">
         <p className="text-sm">&copy; {new Date().getFullYear()} Digisync Labs. All rights reserved.</p>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero(){
     return(
@@ -20,9 +21,9 @@ export default function Hero(){
                 <p className="text-lg">
                     Kami adalah mitra teknologi Anda dalam membangun solusi digital yang inovatif, scalable, dan tepat guna.
                 </p>
-                <button className="bg-white text-blue-900 px-6 py-3 font-semibold rounded-md hover:bg-gray-200 transition">
-                    Hubungi Kami Sekarang
-                </button>
+                <div className="w-[280px] justify-center bg-white text-blue-900 px-6 py-3 font-semibold rounded-md hover:bg-gray-200 transition">
+                    <Link href="/#contact">Hubungi Kami Sekarang</Link>
+                </div>
                 </div>
                 <div className="mt-12 md:mt-0 md:ml-10">
                 <Image

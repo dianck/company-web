@@ -1,34 +1,60 @@
 // pages/about.js
+import Head from "next/head";
+
+const teamMembers = [
+  {
+    name: "Andi Wijaya",
+    title: "CEO & Co-Founder",
+    description: "Memiliki pengalaman lebih dari 15 tahun di bidang teknologi dan manajemen produk digital.",
+  },
+  {
+    name: "Sinta Maharani",
+    title: "CTO",
+    description: "Ahli dalam pengembangan sistem terdistribusi dan pemimpin tim teknis Digisync Labs.",
+  },
+  {
+    name: "Budi Santoso",
+    title: "Head of Operations",
+    description: "Bertanggung jawab atas operasional perusahaan dan manajemen proyek.",
+  },
+];
+
 export default function About() {
-    return (
-      <div className="min-h-screen bg-gray-100">
-        <section className="py-20 bg-white">
-          <div className="container mx-auto text-center">
-            <h1 className="text-4xl font-bold">About Us</h1>
-            <p className="mt-4">Learn about our history, mission, and team.</p>
-          </div>
+  return (
+    <>
+      <Head>
+        <title>About Us | Digisync Labs</title>
+      </Head>
+      <main className="max-w-4xl mx-auto p-6">
+        <h1 className="text-4xl font-bold mb-6 text-center text-blue-700">Tentang Digisync Labs</h1>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-2 text-gray-800">Sejarah Perusahaan</h2>
+          <p className="text-gray-700">
+            Digisync Labs adalah perusahaan pengembang solusi digital yang berdedikasi untuk memberikan layanan teknologi terbaik bagi kebutuhan bisnis modern. Sejak didirikan, kami telah berkomitmen untuk menghadirkan produk dan layanan yang inovatif, scalable, dan sesuai dengan perkembangan zaman. Dalam perjalanannya, Digisync Labs telah melewati berbagai pencapaian penting, memperluas layanan dan meningkatkan kepercayaan dari berbagai sektor industri.
+          </p>
         </section>
-  
-        <section className="py-20 bg-gray-200">
-          <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-semibold">Our History</h2>
-            <p className="mt-4">Founded in 2020, we have grown to become leaders in the industry.</p>
-          </div>
-        </section>
-  
-        <section className="py-20 bg-white">
-          <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-semibold">Our Team</h2>
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 shadow-lg rounded-lg">
-                <h3 className="text-xl font-semibold">John Doe</h3>
-                <p>CEO & Founder</p>
+
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-800">Tim Kami</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="p-4 border rounded shadow hover:shadow-lg transition-shadow">
+                <h3 className="text-xl font-bold text-blue-600">{member.name}</h3>
+                <p className="text-sm text-gray-600">{member.title}</p>
+                <p className="mt-2 text-gray-700">{member.description}</p>
               </div>
-              {/* Repeat for other team members */}
-            </div>
+            ))}
           </div>
         </section>
-      </div>
-    );
-  }
-  
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-2 text-gray-800">Budaya Perusahaan</h2>
+          <p className="text-gray-700">
+            Di Digisync Labs, kami percaya bahwa kolaborasi, inovasi, dan pertumbuhan berkelanjutan adalah fondasi dari kesuksesan kami. Kami mendorong budaya kerja yang terbuka, inklusif, dan saling mendukung. Setiap anggota tim diberikan ruang untuk berkembang, bereksperimen, dan menyuarakan ide-ide mereka. Dengan lingkungan kerja yang dinamis dan berorientasi pada masa depan, kami berupaya untuk tidak hanya membangun solusi digital, tetapi juga menciptakan dampak positif bagi masyarakat.
+          </p>
+        </section>
+      </main>
+    </>
+  );
+}

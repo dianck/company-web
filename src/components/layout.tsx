@@ -10,8 +10,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   // Ubah dari nama menjadi rute langsung
   const navItems = [
-    { label: 'About Us', path: '/#about' },
-    { label: 'Services', path: '/#services' },
+    { label: 'About Us', path: '/about' },
+    { label: 'Services', path: '/services' },
     { label: 'Teams', path: '/teams' },
   ];
 
